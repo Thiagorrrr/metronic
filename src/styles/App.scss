@@ -1,0 +1,16 @@
+$colorAside: #1e1e2d;
+$colorAsideUnSelect: #a2a3b7;
+$colorAsideBrand: #1a1a27;
+$colorSelectdAside: #1b1b28;
+$colorMenu: #4c4e6f;
+$white: #fff;
+$colorIconSelect: #3699FF;
+
+.app {
+    display: flex;
+}
+
+@import '../styles/Header.scss';
+@import '../styles/Aside.scss';
+@import '../styles/Item.scss';
+@import '../styles/ItemMenu.scss';

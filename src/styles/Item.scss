@@ -1,0 +1,45 @@
+.item {
+    display: inline-block;
+    position: relative;
+    padding: 9px 25px;
+    font-size: 14px;
+    height: 44px;
+    width: 100%;
+    text-decoration: none;
+    color: $colorAsideUnSelect;
+    &__icon {
+        min-width: 26px;
+        font-size: 21px;
+        margin-right: 20px;
+    }
+    &:not(.collapsed),
+    &:hover,
+    &--active {
+        color: $white;
+        background-color: $colorSelectdAside;
+
+        .item__icon {
+            color: $colorIconSelect;
+        }
+
+        &:hover {
+            color: $white;
+        }
+    }
+
+    &:not(.collapsed) {
+        .item__arrow {
+            transform: rotate(90deg);
+            transition: transform ease-in-out .2s;
+        }
+    }
+
+    &__arrow {
+        position: absolute;
+        transition: transform ease-in-out .2s;
+        right: 20px;
+        top: 15px;
+        font-size: 12px;
+        margin-right: 0;   
+    }
+}
