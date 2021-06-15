@@ -5,11 +5,13 @@ $colorSelectdAside: #1b1b28;
 $colorMenu: #4c4e6f;
 $white: #fff;
 $colorIconSelect: #3699FF;
+$colorScroll: #637099;
 
 .app {
     display: flex;
 }
 
+@import '../styles/Accordion.scss';
 @import '../styles/Header.scss';
 @import '../styles/Aside.scss';
 @import '../styles/Item.scss';

@@ -3,7 +3,7 @@ import dados from "../dados/data";
 
 const Aside = () => {
   return (
-    <aside className="aside col-sm-4">
+    <aside className="aside col-sm-6">
       <div className="aside__container">
         <div className="aside__brand">metronic </div>
         <ul className="aside__list" id="asideMenu">
@@ -18,6 +18,7 @@ const Aside = () => {
                   icon={item.icon}
                   submenu={item.submenu}
                   selected={item.selected}
+                  classe={item.classe}
                 />
               )
             })

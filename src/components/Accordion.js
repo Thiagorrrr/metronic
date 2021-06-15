@@ -1,7 +1,7 @@
 import Item from './Item'
 import ItemMenu from './ItemMenu';
 
-const Accordion = ({ index, text, name, valor, icon, submenu, selected }) => {
+const Accordion = ({ index, text, name, valor, icon, submenu, selected, classe }) => {
     return (
         <li className="accordion">
             <div className="accordion__wrapper">
@@ -15,13 +15,13 @@ const Accordion = ({ index, text, name, valor, icon, submenu, selected }) => {
                 {
                     text ?
                         <>
-                            <h2 className="mb-0" id={`heading${index}`}>
+                            <h2 className="accordion__title mb-0" id={`heading${index}`}>
                                 <Item
                                     controls={`collapse${index}`}
                                     target={`#collapse${index}`}
                                     icon={icon}
                                     link=''
-                                    classe="dash"
+                                    classe={classe}
                                     text={text}
                                     selected={selected}
                                     submenu={submenu}
@@ -32,9 +32,23 @@ const Accordion = ({ index, text, name, valor, icon, submenu, selected }) => {
                             {
                                 submenu ?
                                     <div id={`collapse${index}`} className="collapse" aria-labelledby={`heading${index}`} data-parent="#asideMenu">
-                                        <ul>
+                                        <ul  className="accordion__submenu-list">
                                             {
-                                                submenu.map((item, index) => <li key={index} style={{ color: "red" }}>{item.name}</li>)
+                                                submenu.map((item, index) => {
+                                                    return (
+                                                        <li key={index}>
+                                                            <Item
+                                                                link='#'
+                                                                alt={item.alt}
+                                                                classe={item.classe}
+                                                                text={item.name}
+                                                                submenu={true}
+                                                            />
+
+                                                        </li>
+                                                    )
+
+                                                })
                                             }
                                         </ul>
                                     </div> : null

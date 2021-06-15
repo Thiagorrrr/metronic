@@ -1,0 +1,8 @@
+.accordion {
+    &__title {
+        text-transform: capitalize;
+    }
+    &__submenu-list{
+        padding: 0;
+    }
+}

@@ -1,22 +1,50 @@
 .aside {
     width: 265px;
-    height: 100vh;
-    overflow-y: scroll;
     background-color: $colorAside;
     &__brand {
+        display: flex;
+        align-items: center;
+        font-size: 25px;
+        text-transform: uppercase;
+        font-weight: bold;
         height: 65px;
         padding: 0 25px;
         color: $white;
         background-color: $colorAsideBrand;
     }
     &__title-menu {
+        display: flex;
+        align-items: center;
         margin-top: 20px;
         padding: 0 25px;
         height: 40px;
     }
     &__list {
+        position: relative;
+        overflow: scroll;
+        height: 100vh;
         padding: 30px 0 0;
         margin: 0;
         list-style: none;
+    }
+        /* Works on Firefox */
+    * {
+        scrollbar-width: thin;
+        scrollbar-color: $colorScroll transparent;
+    }
+        
+    /* Works on Chrome, Edge, and Safari */
+    *::-webkit-scrollbar {
+        width: 6px;
+    }
+    
+    *::-webkit-scrollbar-track {
+        background: transparent;
+    }
+    
+    *::-webkit-scrollbar-thumb {
+        background-color: $colorScroll;
+        border-radius: 20px;
+        border-right: 3px solid $colorAside;
     }
 }

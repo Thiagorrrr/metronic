@@ -1,7 +1,8 @@
-const Item = ({ text, selected, classe, icon, link, target, controls, submenu }) => {
+const Item = ({ text, selected, classe, icon, link, target, controls, submenu, alt }) => {
     return (
         <a  
             href={link} 
+            alt={alt}
             className={`collapsed item ${classe ? `item__${classe}` : ''} ${selected ? 'item--active' : ''} `}
             type="button" 
             data-toggle="collapse"
