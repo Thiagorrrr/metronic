@@ -8,7 +8,7 @@ const Aside = ({activeMenu}) => {
   const [mouse, setMouse] = useState(false);
 
   return (
-    <aside className={`aside col-10 col-md-3 ${activeMenu ? 'aside--active': ''}  ${close ? `aside--close` : ''}`}>
+    <aside className={`aside col-10 col-md-4 col-xl-2 ${activeMenu ? 'aside--active': ''}  ${close ? `aside--close` : ''}`}>
       <div className="aside__container">
         <div className="aside__brand d-none d-lg-flex">
           {
