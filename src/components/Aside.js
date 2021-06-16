@@ -3,14 +3,14 @@ import Accordion from "./Accordion";
 import dados from "../dados/data";
 import Arrow from "../svg/Arrow"
 
-const Aside = () => {
+const Aside = ({activeMenu}) => {
   const [close, setClose] = useState(false);
   const [mouse, setMouse] = useState(false);
 
   return (
-    <aside className={`aside col-sm-6 ${close ? `aside--close` : ''}`}>
+    <aside className={`aside col-10 col-md-3 ${activeMenu ? 'aside--active': ''}  ${close ? `aside--close` : ''}`}>
       <div className="aside__container">
-        <div className="aside__brand">
+        <div className="aside__brand d-none d-lg-flex">
           {
             close ?
               null : <h1 className="aside__title"> metronic</h1>

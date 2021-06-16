@@ -1,8 +1,25 @@
+import React, { useContext } from 'react'
+import { ThemeContext } from './ThemeContext';
 
-const Header = ()=> 
-    <header className="col-sm-8">
-        Header
-    </header>
+const Header = () => {
+    const { activeMenu } = useContext(ThemeContext);
 
-
+    return (
+        <header className="header">
+            <div className="header__mobile">
+                <div className="header__mobile-fixed">
+                    <h1 className="header__brand-name"> metronic </h1>
+                    <span className="header__hamburguer" onClick={() => { activeMenu() }}>
+                        <span className="header__hamburguer-md"> </span>
+                    </span>
+                </div>
+            </div>
+            <div className="header__wrapper">
+                <h2 className="header__title">FINDEX - Incubadora de empreendimentos Inovadores e tecnológicos </h2>
+                <i className="header__icon fas fa-cog"> </i>
+            </div>
+            <div className="header__dash">Dashboard</div>
+        </header>
+    )
+}
 export default Header;

@@ -1,0 +1,28 @@
+$colorAside: #1e1e2d;
+$colorAsideUnSelect: #a2a3b7;
+$colorAsideBrand: #1a1a27;
+$colorSelectdAside: #1b1b28;
+$colorMenu: #4c4e6f;
+$white: #fff;
+$colorIconSelect: #3699FF;
+$colorScroll: #637099;
+$colorArrow: #494b74;
+$colorLine: #EBEDF3;
+
+@mixin breakpoint-xs {
+	@media (min-width: 1200px){
+		@content;
+	}
+}
+
+@mixin breakpoint-lg {
+	@media (min-width: 1024px){
+		@content;
+	}
+}
+
+@mixin breakpoint-md {
+	@media (min-width: 768px){
+		@content;
+	}
+}
