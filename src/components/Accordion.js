@@ -36,7 +36,7 @@ const Accordion = ({ index, text, name, icon, submenu, selected, classe, close }
                                             {
                                                 submenu.map((item, index) => {
                                                     return (
-                                                        <li key={index}>
+                                                        <li className="accordion__submenu-item" key={index}>
                                                             <Item
                                                                 link={item.link}                                                                alt={item.alt}
                                                                 classe={item.classe}

@@ -13,7 +13,7 @@ const Aside = () => {
         <div className="aside__brand">
           {
             close ?
-              null : <> metronic </>
+              null : <h1 className="aside__title"> metronic</h1>
           }
           <span className="aside__arrow" onClick={() => setClose(close ? false : true)}>
             <Arrow />

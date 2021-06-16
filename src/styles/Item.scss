@@ -1,8 +1,11 @@
 .item {
-    display: inline-block;
+    display: flex;
+    align-items: center;
     position: relative;
     padding: 9px 25px;
-    font-size: 14px;
+    font-size: 13px;
+    font-weight: 400;
+    font-family: 'Poppins', sans-serif;
     height: 44px;
     width: 100%;
     text-decoration: none;
