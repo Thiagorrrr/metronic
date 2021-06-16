@@ -5,4 +5,11 @@
     &__submenu-list{
         padding: 0;
     }
+    &__icon {
+       text-align: center;
+       display: block;
+        min-width: 26px;
+        font-size: 21px;
+        color: $colorMenu;
+    }
 }

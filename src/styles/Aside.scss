@@ -1,6 +1,32 @@
 .aside {
+    position: relative;
     width: 265px;
     background-color: $colorAside;
+    &--close {
+        width: 75px;
+        .aside__arrow {
+            right: 25px;
+            svg {
+                transform: rotateY(180deg);
+            }
+            g path {
+                fill: $colorIconSelect;
+            }
+        }
+    }
+    &__arrow {
+        position: absolute;
+        right: 20px;
+        cursor: pointer;
+        g path {
+            fill: $colorArrow;
+        }
+        &:hover {
+            g path {
+                fill: $colorIconSelect;
+            }
+        }
+    }
     &__brand {
         display: flex;
         align-items: center;
@@ -12,18 +38,12 @@
         color: $white;
         background-color: $colorAsideBrand;
     }
-    &__title-menu {
-        display: flex;
-        align-items: center;
-        margin-top: 20px;
-        padding: 0 25px;
-        height: 40px;
-    }
+
     &__list {
         position: relative;
         overflow: scroll;
         height: 100vh;
-        padding: 30px 0 0;
+        padding: 30px 0 70px;
         margin: 0;
         list-style: none;
     }

@@ -1,5 +1,4 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
 import 'bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'jquery/dist/jquery.min.js'
@@ -7,10 +6,10 @@ import 'bootstrap/dist/js/bootstrap.min.js';
 import './index.css';
 import App from './components/App';
 import reportWebVitals from './reportWebVitals';
+import { render } from 'react-snapshot';
 
 
-
-ReactDOM.render(
+render(
   <React.StrictMode>
     <App />
   </React.StrictMode>,

@@ -1,16 +1,16 @@
 import Item from './Item'
 import ItemMenu from './ItemMenu';
 
-const Accordion = ({ index, text, name, valor, icon, submenu, selected, classe }) => {
+const Accordion = ({ index, text, name, icon, submenu, selected, classe, close }) => {
     return (
         <li className="accordion">
             <div className="accordion__wrapper">
                 {
                     name ?
                         <ItemMenu
+                            close={close}
                             text={name}
-                        />
-                        : null
+                        /> : null
                 }
                 {
                     text ?
@@ -22,9 +22,9 @@ const Accordion = ({ index, text, name, valor, icon, submenu, selected, classe }
                                     icon={icon}
                                     link=''
                                     classe={classe}
-                                    text={text}
+                                    text={close ? '' : text}
                                     selected={selected}
-                                    submenu={submenu}
+                                    submenu={close ? '' : submenu}
 
                                 />
                             </h2>
@@ -32,17 +32,16 @@ const Accordion = ({ index, text, name, valor, icon, submenu, selected, classe }
                             {
                                 submenu ?
                                     <div id={`collapse${index}`} className="collapse" aria-labelledby={`heading${index}`} data-parent="#asideMenu">
-                                        <ul  className="accordion__submenu-list">
+                                        <ul className="accordion__submenu-list">
                                             {
                                                 submenu.map((item, index) => {
                                                     return (
                                                         <li key={index}>
                                                             <Item
-                                                                link='#'
-                                                                alt={item.alt}
+                                                                link={item.link}                                                                alt={item.alt}
                                                                 classe={item.classe}
                                                                 text={item.name}
-                                                                submenu={true}
+                                                                submenu={item.submenu}
                                                             />
 
                                                         </li>

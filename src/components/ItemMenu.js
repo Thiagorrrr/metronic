@@ -1,3 +1,14 @@
-const ItemMenu = ({ text }) => <div className="aside__title-menu"> <h4 className='itemMenu'>{text} </h4>  </div>
+const ItemMenu = ({ text, close }) => 
+    <div className="itemMenu"> 
+        {
+             text && !close ?
+
+             <h4 className='itemMenu__title'>{text} </h4>: null
+        }
+        {
+            text && close ?
+            <i className="accordion__icon fas fa-ellipsis-h"></i> : null 
+        }
+    </div>
 
 export default ItemMenu;
