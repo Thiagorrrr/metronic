@@ -1,6 +1,8 @@
 .accordion {
     border: 0;
     &__title {
+        border: 0;
+        box-shadow: none;
         text-transform: capitalize;
     }
     &__submenu-list{
