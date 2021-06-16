@@ -6,7 +6,7 @@ const Header = () => {
 
     return (
         <header className="header">
-            <div className="header__mobile">
+            <div className="header__mobile d-lg-none">
                 <div className="header__mobile-fixed">
                     <h1 className="header__brand-name"> metronic </h1>
                     <span className="header__hamburguer" onClick={() => { activeMenu() }}>
