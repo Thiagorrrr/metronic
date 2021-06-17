@@ -9,9 +9,14 @@ const Header = () => {
             <div className="header__mobile d-lg-none">
                 <div className="header__mobile-fixed">
                     <h1 className="header__brand-name"> metronic </h1>
-                    <span className="header__hamburguer" onClick={() => { activeMenu() }}>
-                        <span className="header__hamburguer-md"> </span>
-                    </span>
+                    <input className="header__menu-hamburguer" id="menu-hamburguer" type="checkbox" />
+
+                    <label className="header__label" for="menu-hamburguer">
+                        <span className="header__hamburguer" onClick={() => { activeMenu() }}>
+                            <span className="header__hamburguer-md"> </span>
+                        </span>
+                    </label>
+
                 </div>
             </div>
             <div className="header__wrapper">
