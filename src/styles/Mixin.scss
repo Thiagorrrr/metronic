@@ -10,6 +10,27 @@ $colorArrow: #494b74;
 $colorLine: #EBEDF3;
 $colorHamburguer: #484f66;
 
+
+//px to rem
+@function strip-units($value) {
+  @return ($value / ($value * 0 + 1));
+}
+
+@function rem($pxval) {
+  @if not unitless($pxval) {
+    $pxval: strip-units($pxval);
+  }
+
+  $base: 16px;
+
+  @if not unitless($base) {
+    $base: strip-units($base);
+  }
+
+  @return ($pxval / $base) * 1rem;
+}
+
+
 @mixin breakpoint-xs {
 	@media (min-width: 1200px){
 		@content;

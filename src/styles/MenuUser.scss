@@ -1,0 +1,134 @@
+.menuUser {
+    display: none;
+    &--active {
+        background-color: rgba(0, 0, 0, 0.1);
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        display: block;
+        top: 0;
+    }
+    &__title {
+        font-size: rem(19.5);
+        font-family: "Poppins", sans-serif;
+        font-weight: 500;
+        text-transform: capitalize;
+        margin-bottom: 32.5px;
+    }
+    &__box-name {
+        position: relative;
+    }
+    &__close {
+        position: absolute;
+        right: 0;
+        top: 0;
+        cursor: pointer;
+        border-radius: rem(5);
+        width: 24px;
+        height: 24px;
+        text-align: center;
+        color: #7E8299;
+        background-color: #F3F6F9;
+        border-color: #F3F6F9;
+        &:hover {
+            background-color: $colorIconSelect;
+            color: $white;
+        }
+    }
+    &__wrapper {
+        z-index: 2;
+        position: fixed;
+        width: 100%;
+        background-color: $white;
+        padding: 32px;
+        right: 0;
+        top: 0;
+        border: 0;
+        box-shadow: 0px 1px 9px -3px rgba(0, 0, 0, 0.25);
+
+        @include breakpoint-lg { 
+            width: 375px;
+        }
+    }
+    &__box-perfil {
+        display: flex;
+    }
+    &__box-img {
+        position: relative;
+    }
+    &__img {
+        height: 100px;
+        width: 100px;
+        border-radius: 6.72px;
+        margin-right: 20px;
+        padding-top: 2px;
+    }
+    &__status {
+        top: -4px;
+        right: 16px;
+        position: absolute;
+        width: 12px;
+        height: 12px;
+        border-radius: 100%;
+        border: 2px solid $white;
+        &--active {
+            background-color: #1bc5bd;
+        }
+        &--off {
+            background-color: red;
+        }
+    }
+    &__wrapper-perfil {
+        display: flex;
+        flex-direction: column;
+    }
+    &__name {
+        color: #3f4254;
+        font-size: rem(16.25);
+        font-family: "Poppins", sans-serif;
+        text-decoration: none;
+        font-weight: 500;
+    }
+    &__email a,
+    &__perfil {
+        text-decoration: none;
+        font-size: rem(13);
+        font-family: "Poppins", sans-serif;
+        color: #b5b5c3;
+    }
+
+    &__email svg {
+        margin-right: rem(5);
+        g [fill] {
+            fill: $colorIconSelect;
+        }
+    }
+
+    &__name,
+    &__email a {
+        &:hover {
+            color: $colorIconSelect;
+        }
+    }
+
+    &__box-btn {
+        margin-top: 10px;
+    }
+    &__btn {
+        display: inline;
+        border-radius: rem(5);
+        color: $colorIconSelect;
+        text-transform: capitalize;
+        background-color: #e1f0ff;
+        border-color: transparent;
+        font-weight: 600;
+        font-size: rem(14);
+        font-family: "Poppins", sans-serif;
+        text-decoration: none;
+        padding: 6px 18px;
+        &:hover {
+            color: $white;
+            background-color: $colorIconSelect;
+        }
+    }
+}

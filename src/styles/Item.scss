@@ -4,7 +4,7 @@
     position: relative;
     padding: 9px 25px;
     border: 0;
-    font-size: 13px;
+    font-size: rem(13);
     font-weight: 400;
     font-family: 'Poppins', sans-serif;
     height: 44px;
@@ -13,7 +13,7 @@
     color: $colorAsideUnSelect;
     &__icon {
         color: $colorMenu;
-        min-width: 26px;
+        min-width: 23px;
         font-size: 21px;
         margin-right: 20px;
     }

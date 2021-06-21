@@ -1,8 +1,8 @@
 import { createContext } from 'react';
 
 export const themes = {
-    ChangeCity: () => ({}),
-    ChangeMeters: () => ({}),
+    activeMenu: () => {},
+    activeUser: () => {},
   };
   
   export const ThemeContext = createContext(
