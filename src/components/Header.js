@@ -10,7 +10,7 @@ const Header = () => {
                     <h1 className="header__brand-name"> metronic </h1>
 
 
-                    <div className="header__box-config  d-md-none">
+                    <div className="header__box-config  d-lg-none">
                         <a className="header__config" href="#s">
                             <i className="header__icon fas fa-cog"> </i>
                         </a>
@@ -32,7 +32,7 @@ const Header = () => {
             </div>
             <div className="header__wrapper">
                 <h2 className="header__title">FINDEX - Incubadora de empreendimentos Inovadores e tecnológicos </h2>
-                <div className="header__box-config d-none d-md-flex">
+                <div className="header__box-config d-none d-lg-flex">
                     <a className="header__config" href="#s">
                         <i className="header__icon fas fa-cog"> </i>
                     </a>
