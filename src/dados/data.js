@@ -304,6 +304,36 @@ let dados = {
             icon: "fas fa-book",
             link: "#",
         },
+    ],
+    card: [
+        {
+            icon: "fas fa-medal",
+            title: "Certificada CERNE 2",
+            subtitle: "Desde 2019",
+            number: "",
+            color: "azul"
+        },
+        {
+            icon: "fas fa-rocket",
+            title: "",
+            subtitle: "Empreendimentos Pré-incubados",
+            number: "34",
+            color: "verde"
+        },
+        {
+            icon: "fas fa-rocket",
+            title: "",
+            subtitle: "Empreendimentos Incubados",
+            number: "128",
+            color: "verde"
+        },
+        {
+            icon: "fas fa-rocket",
+            title: "",
+            subtitle: "Empreendimentos Graduados",
+            number: "31",
+            color: "verde"
+        }
     ]
 }
 

@@ -19,16 +19,15 @@ function App() {
   return (
     <ThemeContext.Provider value={{ activeMenu, activeUser }}>
       <div className="app">
-        <Aside
-          activeMenu={active}
+        <Header />
+        <MenuUser
+          user={user}
         />
         <main className="app__main">
-          <Header />
-          <MenuUser
-            user={user}
+          <Aside
+            activeMenu={active}
           />
           <Section />
-          <footer> teste</footer>
         </main>
       </div>
     </ThemeContext.Provider>

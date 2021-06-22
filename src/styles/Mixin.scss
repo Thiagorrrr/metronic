@@ -31,11 +31,12 @@ $colorHamburguer: #484f66;
 }
 
 
-@mixin breakpoint-xs {
-	@media (min-width: 1200px){
+@mixin breakpoint-md {
+	@media (min-width: 768px){
 		@content;
 	}
 }
+
 
 @mixin breakpoint-lg {
 	@media (min-width: 1024px){
@@ -43,8 +44,9 @@ $colorHamburguer: #484f66;
 	}
 }
 
-@mixin breakpoint-md {
-	@media (min-width: 768px){
+
+@mixin breakpoint-xl {
+	@media (min-width: 1200px){
 		@content;
 	}
 }

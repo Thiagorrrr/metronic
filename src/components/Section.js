@@ -1,9 +1,28 @@
+import dados from "../dados/data";
+import Card from "../components/Card"
 
+const Section = () => {
+    console.log(dados);
+    return (
+        <section className="section">
+            <div className="section__wrapper">
+                {
+                    dados.card.map((item) => {
+                        return (
+                            <Card
+                                icon={item.icon}
+                                title={item.title}
+                                subtitle={item.subtitle}
+                                number={item.number}
+                                color={item.color}
+                            />
+                        )
+                    })
+                }
 
-const Section = () =>
-    <section className="section"style={{color:"#e6e8f0"}}>
-        conteudo do dash bord
-    </section>
+            </div>
 
-
+        </section>
+    )
+}
 export default Section;

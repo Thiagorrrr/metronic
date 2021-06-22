@@ -5,6 +5,7 @@
         min-height: 55px;
     }
     &__mobile-fixed {
+        z-index: 1;
         background-color: $colorAsideBrand;
         position: fixed;
         display: flex;
@@ -69,6 +70,20 @@
         }
     }
 
+    &__box {
+        width: 100%;
+        display: flex;
+    }
+    &__box-info {
+        width: 100%;
+    }
+    &__logo {
+        align-items: center;
+        justify-content: center;
+        width: 23%;
+        max-width: 265px;
+        border-right: 1px solid $colorLine;
+    }
     &__brand-name {
         font-size: 18px;
         font-family: "Poppins", sans-serif;
@@ -81,9 +96,12 @@
     &__title {
         font-family: "Poppins", sans-serif;
         font-weight: 500;
-        font-size: 28px;
+        font-size: rem(20);
         margin: 0;
         color: $colorMenu;
+        @include breakpoint-md {
+            font-size: rem(28);
+        }
     }
     &__dash {
         font-size: 16px;

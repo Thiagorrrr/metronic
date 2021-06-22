@@ -1,14 +1,19 @@
 
 .app {
     display: flex;
+    flex-direction: column;
+    overflow: hidden;
     &__main {
+        display: flex;
         width:  100%;
     }
 }
 @import '../styles/Mixin.scss';
 @import '../styles/Accordion.scss';
+@import '../styles//Section.scss';
 @import '../styles/Header.scss';
 @import '../styles/MenuUser.scss';
 @import '../styles/Aside.scss';
 @import '../styles/Item.scss';
 @import '../styles/ItemMenu.scss';
+@import '../styles/Card.scss'
