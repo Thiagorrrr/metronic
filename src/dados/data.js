@@ -334,6 +334,68 @@ let dados = {
             number: "31",
             color: "verde"
         }
+    ],
+    authors1: [
+        {
+            status: "pre",
+            icon: "icone-1",
+            name:"Ricky Hunt",
+            info: "PHP, SQLite, Artisan CLI"
+        },
+        {
+            status: "pre",
+            icon: "icone-2",
+            name:"Anne Clarc",
+            info: "PHP, SQLite, Artisan CLI"
+        },
+        {
+            status: "nre",
+            icon: "icone-3",
+            name:"Kristaps Zumman",
+            info: "PHP, SQLite, Artisan CLI"
+        },
+        {
+            status: "pre",
+            icon: "icone-4",
+            name:"Ricky Hunt",
+            info: "PHP, SQLite, Artisan CLI"
+        },
+        {
+            status: "re",   
+            icon: "icone-5",
+            name:"Carles Puyol",
+            info: "PHP, SQLite, Artisan CLI"
+        },
+        {
+            status: "pre",
+            icon: "icone-1",
+            name:"Ricky Hunt",
+            info: "PHP, SQLite, Artisan CLI"
+        },
+        {
+            status: "re",
+            icon: "icone-2",
+            name:"Anne Clarc",
+            info: "PHP, SQLite, Artisan CLI"
+        },
+        {
+            status: "en",
+            icon: "icone-3",
+            name:"Kristaps Zumman",
+            info: "PHP, SQLite, Artisan CLI"
+        },
+        {
+            status: "en",
+            icon: "icone-4",
+            name:"Ricky Hunt",
+            info: "PHP, SQLite, Artisan CLI"
+        },
+        {
+            status: "pre",
+            icon: "icone-5",
+            name:"Carles Puyol",
+            info: "PHP, SQLite, Artisan CLI"
+        }
     ]
 }
 

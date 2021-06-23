@@ -14,7 +14,7 @@ const MenuUser = ({user}) => {
                     </div>
                     <div className="menuUser__box-perfil">
                         <div className="menuUser__box-img">
-                            <img className="menuUser__img " src={process.env.PUBLIC_URL + 'user.jpg' } alt="imagem do usuário"/>
+                            <img className="menuUser__img " src={`${process.env.PUBLIC_URL}user.jpg` } alt="imagem do usuário"/>
                             <span className="menuUser__status menuUser__status--active"> </span>
                         </div>
                         <div className="menuUser__wrapper-perfil">

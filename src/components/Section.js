@@ -1,6 +1,6 @@
 import dados from "../dados/data";
 import Card from "../components/Card"
-
+import Authors from "./Authors";
 const Section = () => {
     console.log(dados);
     return (
@@ -19,7 +19,14 @@ const Section = () => {
                         )
                     })
                 }
-
+            </div>
+            <div className="section__wrapper"> 
+                <Authors
+                    dados={dados.authors1}
+                />
+                <Authors
+                    dados={dados.authors1}
+                />
             </div>
 
         </section>

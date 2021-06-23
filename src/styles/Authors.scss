@@ -1,0 +1,85 @@
+.authors {
+    width: 33.333%;
+    background-color: $white;
+    padding: 15px;
+    box-shadow: 0 0 30px 0 rgba(82, 63, 105, 0.05);
+    max-height: 450px;
+    overflow: hidden;
+    border-radius: 5px;
+
+    &__title,
+    &__info,
+    &__name {
+        font-family: "Poppins", sans-serif;
+        font-weight: 500;
+        color: #181c32;
+        font-size: rem(14)
+    }
+    &__title {
+        font-weight: 600;
+        font-size: rem(20);
+    }
+    &__info {
+        font-size: rem(13);
+        color: #B5B5C3;
+    }
+    &__list {
+        max-height: 450px;
+        overflow-y: scroll;
+        padding: 0;
+        list-style: none;
+        margin-top: 20px;
+    }
+    &__item {
+        display: flex;
+        margin-bottom: 32px;
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+    &__img {
+        background-color: #c9f7f5;
+        padding: 8px 5px 0 5px;
+        width: 40px;
+        height: 40px;
+        margin-right: 10px;
+        border-radius: 5px;
+    }
+    &__box {
+        display: flex;
+        justify-content: space-between;
+    }
+    &__box-text {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__select {
+        cursor: pointer;
+        padding: 5px;
+        outline: transparent;
+        font-family: "Poppins", sans-serif;
+        font-weight: 500;
+        border-radius: 0.42rem;
+        font-size: 0.925rem;
+        text-transform: capitalize;
+        color: $colorIconSelect;
+        background-color: #e1f0ff;
+        border-color: transparent;
+        &:hover {
+            color: $white;
+            background-color: $colorIconSelect;
+            border-color: transparent;
+        }
+    }
+    &__option  {
+        border-radius: 0.42rem;
+        font-family: "Poppins", sans-serif;
+        font-weight: 500;
+        text-transform: capitalize;
+        color: $colorIconSelect;
+        background-color: $white;
+        padding: 5px;
+        cursor: pointer;
+    }
+}

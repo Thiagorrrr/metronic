@@ -12,6 +12,9 @@
         flex-direction: column;
         justify-content: space-between;
         align-items: center;
+        &:nth-child(2n) {
+            margin-top: 40px;
+        }
         @include breakpoint-lg {
             flex-wrap: wrap;
             align-items: initial;

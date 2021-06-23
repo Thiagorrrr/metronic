@@ -1,5 +1,5 @@
 const Card = ({ title, icon, subtitle, number, color }) =>
-
+    
     <div className={`card card--${color || ''}`}>
         <div className="card__wrapper">
             { 
