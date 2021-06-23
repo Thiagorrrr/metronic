@@ -2,12 +2,14 @@
     position: fixed;
     width: 100%;
     max-width: 265px;
+    top: 55px;
     background-color: $colorAside;
     transform: translateX(-100%);
     transition: transform ease-in-out .2s;
     z-index: 2;
     @include breakpoint-lg { 
         width: 23%;
+        top: auto;
     }
 
     &--active {
