@@ -1,11 +1,14 @@
 .aside {
     position: fixed;
-    width: 23%;
+    width: 100%;
     max-width: 265px;
     background-color: $colorAside;
     transform: translateX(-100%);
     transition: transform ease-in-out .2s;
     z-index: 2;
+    @include breakpoint-lg { 
+        width: 23%;
+    }
 
     &--active {
         transform: translateX(0);
