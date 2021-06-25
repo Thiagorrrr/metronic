@@ -13,8 +13,12 @@
     }
 
     @include breakpoint-lg {
+        width: 49.333%;
+    }
+
+    @include breakpoint-xl {
         margin-bottom: 0;
-        width: 33.333%;
+        width: 32.333%;
     }
 
     &__container {
