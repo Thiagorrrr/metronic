@@ -32,6 +32,10 @@
             }
         }
     }
+    &__label {
+        width: 24px;
+        height: 24px; 
+    }
     &__hamburguer {
         width: 24px;
         height: 24px;
@@ -127,6 +131,7 @@
     }
     &__user {
         cursor: pointer;
+        margin-right: 20px;
     }
     &__user-img {
         height: 40px;

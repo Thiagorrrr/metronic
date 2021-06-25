@@ -396,7 +396,78 @@ let dados = {
             name:"Carles Puyol",
             info: "PHP, SQLite, Artisan CLI"
         }
-    ]
+    ],
+    activity: [
+        {
+            icon:"",
+            description: "Outlines keep you honest. And keep structure",
+            info:"",
+            link:"",
+            data: "03/21",
+            status: "danger"
+        },
+        {
+            icon:"",
+            description: "",
+            info:"AEOL meeting",
+            link:"",
+            data: "04/21",
+            status: "sucess"
+        },
+        {
+            icon:"",
+            description: "",
+            info:"Make deposit",
+            link:"#",
+            nameLink:"USD 700",
+            data: "05/21",
+            status: "stale"
+        },
+        {
+            icon:"",
+            description: "Indulging in poorly driving and keep structure keep great",
+            info:"",
+            link:"#",
+            nameLink:"#XF-2356",
+            data: "05/21",
+            status: "stale"
+        },
+        {
+            icon:"",
+            description: "Outlines keep you honest. And keep structure",
+            info:"",
+            link:"",
+            data: "03/21",
+            status: "danger"
+        },
+        {
+            icon:"",
+            description: "",
+            info:"AEOL meeting",
+            link:"",
+            data: "04/21",
+            status: "sucess"
+        },
+        {
+            icon:"",
+            description: "",
+            info:"Make deposit",
+            link:"#",
+            nameLink:"USD 700",
+            data: "05/21",
+            status: "stale"
+        },
+        {
+            icon:"",
+            description: "Indulging in poorly driving and keep structure keep great",
+            info:"",
+            link:"#",
+            nameLink:"#XF-2356",
+            data: "05/21",
+            status: "stale"
+        }
+    ],
+    
 }
 
 

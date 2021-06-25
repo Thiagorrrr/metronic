@@ -1,8 +1,8 @@
 import dados from "../dados/data";
 import Card from "../components/Card"
 import Authors from "./Authors";
+import Activity from "./Activity";
 const Section = () => {
-    console.log(dados);
     return (
         <section className="section">
             <div className="section__wrapper">
@@ -26,6 +26,9 @@ const Section = () => {
                 />
                 <Authors
                     dados={dados.authors1}
+                />
+                <Activity
+                    dados={dados.activity}
                 />
             </div>
 

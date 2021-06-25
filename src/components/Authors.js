@@ -7,14 +7,11 @@ const Authors = ({ dados }) => {
     const setSelectValue = (valor) => {
         setSelect(valor)
     }
-
-    console.log(select, "adsadasdasd");
-
     return (
         <div className="authors">
             <div className="authors__container">
                 <div className="authors__box">
-                    <span className="authors__title">Authors</span>
+                    <span className="authors__title">Empreendimentos</span>
                     <select className="authors__select" onChange={e => setSelectValue(e.target.value)}>
                         <option className="authors__option " value="all">filtrar</option>
                         <option className="authors__option" value="pre">Pré-incubados</option>

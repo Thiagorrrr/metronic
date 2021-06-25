@@ -11,6 +11,7 @@
     width: 100%;
     text-decoration: none;
     color: $colorAsideUnSelect;
+    -webkit-appearance: none;
     &__icon {
         color: $colorMenu;
         min-width: 23px;
