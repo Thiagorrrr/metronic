@@ -7,9 +7,9 @@ const Activity = ({dados}) => {
                 </div>
                 <ul className="activity__list">
                     {
-                        dados.map((item) =>
+                        dados.map((item, index) =>
 
-                            <li className="activity__item">
+                            <li className="activity__item" key={index}>
                                 <span className="activity__data">{item.data}</span>
                                 <i className={`activity__icon fa fa-genderless  activity__icon--${item.status}`}></i>                             
                                 <div className="activity__box-text">

@@ -2,14 +2,16 @@ import dados from "../dados/data";
 import Card from "../components/Card"
 import Authors from "./Authors";
 import Activity from "./Activity";
+import Graphic from "./Graphic";
 const Section = () => {
     return (
         <section className="section">
             <div className="section__wrapper">
                 {
-                    dados.card.map((item) => {
+                    dados.card.map((item, index) => {
                         return (
                             <Card
+                                index={index}
                                 icon={item.icon}
                                 title={item.title}
                                 subtitle={item.subtitle}
@@ -30,6 +32,7 @@ const Section = () => {
                 <Activity
                     dados={dados.activity}
                 />
+                <Graphic/>
             </div>
 
         </section>

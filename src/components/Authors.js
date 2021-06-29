@@ -22,13 +22,11 @@ const Authors = ({ dados }) => {
                 </div>
                 <ul className="authors__list">
                     {
-                        dados.map((item) =>
-
+                        dados.map((item, index) =>
                             <>
-
                                 {
                                     item.status === select || select === 'all'  ?
-                                        <li className="authors__item">
+                                        <li className="authors__item" key={index} >
                                             <img className="authors__img" src={`${process.env.PUBLIC_URL}${item.icon}.png`} alt="imagem icone"></img>
                                             <div className="authors__box-text">
                                                 <span className="authors__name">{item.name}</span>

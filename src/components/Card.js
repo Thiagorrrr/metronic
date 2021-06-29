@@ -1,6 +1,6 @@
-const Card = ({ title, icon, subtitle, number, color }) =>
+const Card = ({ title, icon, subtitle, number, color, index }) =>
     
-    <div className={`card card--${color || ''}`}>
+    <div className={`card card--${color || ''}`} key={index}>
         <div className="card__wrapper">
             { 
                 icon ?
