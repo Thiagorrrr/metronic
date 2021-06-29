@@ -467,6 +467,60 @@ let dados = {
             status: "stale"
         }
     ],
+    graphic: [
+        {
+            ano: "2021",
+            data: [30, 45, 32, 70, 40, 40, 40, 40],
+            cards:[
+                {
+                    color: "red",
+                    price: "$ 1231,00 ",
+                    description: "total de impostos"
+                },
+                {
+                    color: "green",
+                    price: "$ 1231,00 ",
+                    description: "total de impostos"
+                },
+                {
+                    color: "yellow",
+                    number: "34",
+                    description: "total de impostos"
+                },
+                {
+                    color: "blue",
+                    number: "34",
+                    description: "total de impostos"
+                }
+            ]
+        },
+        {
+            ano: "2020",
+            data: [90, 80, 70, 40, 40, 90, 80, 40],
+            cards:[
+                {
+                    color: "red",
+                    price: "$ 700,00 ",
+                    description: "total de impostos"
+                },
+                {
+                    color: "green",
+                    price: "$200,00 ",
+                    description: "total de impostos"
+                },
+                {
+                    color: "yellow",
+                    number: "90",
+                    description: "total de impostos"
+                },
+                {
+                    color: "blue",
+                    number: "12",
+                    description: "total de impostos"
+                }
+            ]
+        }
+    ]
     
 }
 

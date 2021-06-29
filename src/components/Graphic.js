@@ -1,11 +1,24 @@
 import Chart from "react-apexcharts";
+import dados from "../dados/data"
+import { useState } from "react";
 
 const Graphic = () => {
+    const getData = (item) => {
+        let series = [
+            {
+                data: item,
+                name: "Net Profit",
+            }
+        ]
+        return series
+    }
+
+
     let config = {
         options: {
             stroke: {
                 curve: 'smooth',
-              },
+            },
             chart: {
                 id: "basic-bar",
                 toolbar: {
@@ -70,52 +83,81 @@ const Graphic = () => {
                 strokeColors: '#d13647',
                 strokeWidth: 3,
             }
-        },
-        series: [
-            {
-                data: [30, 45, 32, 70, 40, 40, 40, 40],
-                name: "Net Profit",
-            }
-        ],
+        }
+    }
 
-    };
+    const [select, setSelect] = useState("ano");
+    const setSelectValue = (valor) => {
+        setSelect(valor)
+    }
+
+    console.log(select, "sdsadsa");
+
     return (
         <div className="graphic">
             <div className="graphic__wrapper">
                 <div className="graphic__box">
                     <div className="graphic__box-text">
                         <h2 className="graphic__title">Faturamento dos<br></br> Empreendimentos</h2>
-                        <select className="graphic__select">
-                            <option className="graphic__option " value="2020">2020</option>
+                        <select className="graphic__select" onChange={e => setSelectValue(e.target.value)}>
+                            <option className="graphic__option " value="ano">ano</option>
+                            {
+                                dados?.graphic.map((item, index) => <option key={index} className="graphic__option " value={item.ano}>{item.ano}</option>)
+                            }
+
                         </select>
                     </div>
-                    <Chart
-                        className="graphic__chart"
-                        options={config.options}
-                        series={config.series}
-                        type="line"
-                        width="500"
-                        height="150"
-                    />
+                    {
+
+                        dados?.graphic.map((item) =>
+                            <>
+                                {
+                                    item.ano === select ?
+                                        <Chart
+                                            className="graphic__chart"
+                                            options={config.options}
+                                            series={getData(item.data)}
+                                            type="line"
+                                            width="500"
+                                            height="150"
+                                        /> : null
+                                }
+                            </>
+                        )
+                    }
                 </div>
                 <div className="graphic__list-cards">
                     <ul className="graphic__list">
-                        <li className="graphic__card graphic__card--red">
-                            <span className="graphic__price">$ 1231,00 </span>
-                            <span className="graphic__description">total de impostos</span>
-                        </li>
-                        <li className="graphic__card graphic__card--green">
-                            <span className="graphic__price">$ 1231,00 </span>
-                            <span className="graphic__description">total de impostos</span>
-                        </li>
-                        <li className="graphic__card graphic__card--yellow">
-                            <span className="graphic__number">34 </span>
-                            <span className="graphic__description">total de impostos</span>
-                        </li>
-                        <li className="graphic__card graphic__card--blue">
-                            <span className="graphic__number">34 </span>
-                            <span className="graphic__description">total de impostos</span>
-                        </li>
+                        {
+                            dados?.graphic.map((item) => {
+                                return (
+                                    <>
+
+                                        {
+                                            item.ano === select ?
+                                                item.cards.map((valor) =>
+                                                    <li className={`graphic__card graphic__card--${valor.color}`}>
+                                                        {valor.price &&
+                                                            <span className="graphic__price">{valor.price}</span>
+                                                        }
+                                                        {valor.number &&
+                                                            <span className="graphic__number">{valor.number} </span>
+                                                        }
+                                                        {valor.description &&
+                                                            <span className="graphic__description">{valor.description}</span>
+                                                        }
+                                                    </li>) : null
+                                        }
+                                    </>
+
+
+
+                                )
+                            }
+
+
+                            )
+                        }
                     </ul>
                 </div>
             </div>
