@@ -91,8 +91,6 @@ const Graphic = () => {
         setSelect(valor)
     }
 
-    console.log(select, "sdsadsa");
-
     return (
         <div className="graphic">
             <div className="graphic__wrapper">
@@ -118,8 +116,7 @@ const Graphic = () => {
                                             options={config.options}
                                             series={getData(item.data)}
                                             type="line"
-                                            width="500"
-                                            height="150"
+                                            height= "125"
                                         /> : null
                                 }
                             </>

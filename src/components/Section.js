@@ -22,7 +22,7 @@ const Section = () => {
                     })
                 }
             </div>
-            <div className="section__wrapper"> 
+            <div className="section__wrapper">
                 <Authors
                     dados={dados.authors1}
                 />
@@ -32,7 +32,9 @@ const Section = () => {
                 <Activity
                     dados={dados.activity}
                 />
-                <Graphic/>
+            </div>
+            <div className="section__wrapper">
+                <Graphic />
             </div>
 
         </section>

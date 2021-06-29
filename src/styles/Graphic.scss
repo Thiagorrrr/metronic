@@ -2,14 +2,28 @@
     border-radius: 30px;
     margin-bottom: 40px;
     margin-top: 20px;
-    max-width: 500px;
-    // border: 2px solid  #e9c6d0;
+    width: 90%;
+    overflow: hidden;
+
+    @include breakpoint-lg {
+        width: 50%;
+    }
+
+    &__chart {
+        @include breakpoint-lg {
+            height: 150px;
+        }
+    }
     &__title {
         margin: 0;
         font-family: "Poppins", sans-serif;
         font-weight: 400;
         color: $white;
-        font-size: rem(30);
+        font-size: rem(20);
+
+        @include breakpoint-lg {
+            font-size: rem(30);
+        }
     }
     &__box {
         border-radius: 30px 30px 0 0;
@@ -17,19 +31,39 @@
     }
     &__box-text {
         justify-content: space-between;
-        padding: 30px;
+        padding: 20px;
         display: flex;
+        @include breakpoint-lg {
+            padding: 30px;
+        }
+    }
+
+    &__select {
+        font-family: "Poppins", sans-serif;
+        font-weight: 400;
+        width: 100px;
+        padding: 8px;
+        display: flex;
+        border-radius: 10px;
+        outline: transparent;
+        height: 40px;
+        font-size: rem(16);
+        line-height: 1;
     }
 
     &__list {
         position: absolute;
         top: -50px;
-        padding: 0 50px 0 50px;
+        padding: 0 20px 0 20px;
         margin: 0;
         list-style: none;
         justify-content: space-between;
+        width: 100%;
         display: flex;
         flex-wrap: wrap;
+        @include breakpoint-lg {  
+            padding: 0 50px 0 50px;
+        }
     }
     &__list-cards {
         border: 2px solid #e9c6d0;
@@ -37,7 +71,11 @@
         border-radius: 0px 0px 30px 30px;
         background-color: $white;
         position: relative;
-        height: 310px;
+        height: 280px;
+
+        @include breakpoint-lg {  
+            height: 310px;
+        }
     }
     &__card {
         width: 47%;
@@ -69,17 +107,26 @@
     &__price {
         font-family: "Poppins", sans-serif;
         font-weight: 500;
-        font-size: rem(35);
+        font-size: rem(25);
+        @include breakpoint-lg { 
+            font-size: rem(35);
+        }
     }
     &__number {
-        font-size: rem(65);
+        font-size: rem(45);
         line-height: 1;
         text-align: right;
+        @include breakpoint-lg {  
+            font-size: rem(65); 
+        }
     }
     &__description {
         text-transform: capitalize;
         margin-top: 30px;
         text-align: right;
-        font-size: rem(14);
+        font-size: rem(12);
+        @include breakpoint-lg {  
+            font-size: rem(14); 
+        }
     }
 }
