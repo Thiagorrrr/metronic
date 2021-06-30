@@ -20,5 +20,14 @@
             align-items: initial;
             flex-direction: row;
         }
+
+        &--collumn {
+           @include breakpoint-lg {
+               flex-direction: column;
+           } 
+           @include breakpoint-xl {
+               flex-direction: row;
+           }
+        }
     }
 }

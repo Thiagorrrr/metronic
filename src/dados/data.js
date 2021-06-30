@@ -474,12 +474,12 @@ let dados = {
             cards:[
                 {
                     color: "red",
-                    price: "$ 1231,00 ",
+                    price: "R$ 1231,00 ",
                     description: "total de impostos"
                 },
                 {
                     color: "green",
-                    price: "$ 1231,00 ",
+                    price: "R$ 1231,00 ",
                     description: "total de impostos"
                 },
                 {
@@ -519,6 +519,16 @@ let dados = {
                     description: "total de impostos"
                 }
             ]
+        }
+    ],
+    ind: [
+        {
+            ano: "2021",
+            data: [30, 45, 32, 70, 40],
+        },
+        {
+            ano: "2020",
+            data: [90, 80, 70, 40, 20],
         }
     ]
     

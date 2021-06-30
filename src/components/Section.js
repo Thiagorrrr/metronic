@@ -3,6 +3,7 @@ import Card from "../components/Card"
 import Authors from "./Authors";
 import Activity from "./Activity";
 import Graphic from "./Graphic";
+import Ind from "./Ind"
 const Section = () => {
     return (
         <section className="section">
@@ -33,8 +34,9 @@ const Section = () => {
                     dados={dados.activity}
                 />
             </div>
-            <div className="section__wrapper">
+            <div className="section__wrapper section__wrapper--collumn">
                 <Graphic />
+                <Ind/>
             </div>
 
         </section>

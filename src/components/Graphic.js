@@ -86,7 +86,7 @@ const Graphic = () => {
         }
     }
 
-    const [select, setSelect] = useState("ano");
+    const [select, setSelect] = useState(dados.graphic[0].ano);
     const setSelectValue = (valor) => {
         setSelect(valor)
     }
@@ -98,7 +98,6 @@ const Graphic = () => {
                     <div className="graphic__box-text">
                         <h2 className="graphic__title">Faturamento dos<br></br> Empreendimentos</h2>
                         <select className="graphic__select" onChange={e => setSelectValue(e.target.value)}>
-                            <option className="graphic__option " value="ano">ano</option>
                             {
                                 dados?.graphic.map((item, index) => <option key={index} className="graphic__option " value={item.ano}>{item.ano}</option>)
                             }
