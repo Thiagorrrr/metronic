@@ -1,11 +1,12 @@
 .graphic {
     border-radius: 30px;
     margin-bottom: 40px;
-    margin-top: 60px;
+    margin-top: 30px;
     width: 90%;
     overflow: hidden;
 
     @include breakpoint-xl {
+        margin-top: 60px;
         width: 45%;
     }
 
@@ -69,7 +70,7 @@
         border-radius: 0px 0px 30px 30px;
         background-color: $white;
         position: relative;
-        height: 280px;
+        height: 250px;
 
         @include breakpoint-lg {  
             height: 210px;

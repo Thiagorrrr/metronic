@@ -1,12 +1,13 @@
 .ind {
     border-radius: 30px;
     margin-bottom: 40px;
-    margin-top: 60px;
+    margin-top: 30px;
     width: 90%;
     overflow: hidden;
 
     @include breakpoint-xl {
         width: 45%;
+        margin-top: 60px;
     }
 
     &__chart {
