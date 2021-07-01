@@ -6,7 +6,7 @@
     overflow: hidden;
 
     @include breakpoint-lg {
-        width: 65%;
+        width: 70%;
     }
 
     @include breakpoint-xl {
@@ -74,11 +74,7 @@
         border-radius: 0px 0px 30px 30px;
         background-color: $white;
         position: relative;
-        height: 200px;
-
-        @include breakpoint-lg {  
-            height: 210px;
-        }
+        height: 210px;
 
         @include breakpoint-xl {  
             height: 240px;
@@ -122,8 +118,16 @@
     }
 
     &__price {
+        margin: 5px 0;
+        text-align: center;
+        font-size: rem(20);
+
+        @include breakpoint-md {
+            text-align: initial;
+        }
         @include breakpoint-xl{
             margin: 18px 0;
+            text-align: center;
             font-size: rem(30);
         }
     }

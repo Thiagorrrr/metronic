@@ -1,10 +1,11 @@
 .aside {   
     @include breakpoint-lg {
         display: block;
-        width: 23%;
+        width: 100%;
         max-width: 265px;
         background-color: #e6e8f0;
     }
+
     &__fixed {
         position: fixed;
         width: 100%;
