@@ -21,6 +21,16 @@
             flex-direction: row;
         }
 
+        &--card {
+            flex-wrap: wrap;
+            flex-direction: row;
+            padding: 0 10px;
+
+            @include breakpoint-xl { 
+                justify-content: initial;
+            }
+        }
+
         &--collumn {
            @include breakpoint-lg {
                flex-direction: column;

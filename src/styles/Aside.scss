@@ -9,7 +9,7 @@
     z-index: 2;
     @include breakpoint-lg { 
         width: 23%;
-        top: auto;
+        top: auto
     }
 
     &--active {

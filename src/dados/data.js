@@ -239,22 +239,6 @@ let dados = {
             ]
         },
         {
-            text: "Processo de Seleção",
-            icon: "fas fa-filter",
-            submenu: [
-                {
-                    name: "Gerenciar Processo",
-                    link: "#",
-                    alt: "links"
-                },
-                {
-                    name: "Resumo",
-                    link: "#",
-                    alt: "links"
-                },
-            ]
-        },
-        {
             name: "INDICADORES E RELATÓRIOS",
         },
         {
@@ -314,21 +298,24 @@ let dados = {
             color: "azul"
         },
         {
-            icon: "fas fa-rocket",
+            image: "foguete-01",
+            alt:"icone foguete",
             title: "",
             subtitle: "Empreendimentos Pré-incubados",
             number: "34",
             color: "verde"
         },
         {
-            icon: "fas fa-rocket",
+            image: "foguete-02",
+            alt:"icone foguete",
             title: "",
             subtitle: "Empreendimentos Incubados",
             number: "128",
             color: "verde"
         },
         {
-            icon: "fas fa-rocket",
+            image: "foguete-03",
+            alt:"icone foguete",
             title: "",
             subtitle: "Empreendimentos Graduados",
             number: "31",
