@@ -387,61 +387,61 @@ let dados = {
     authors2: [
         {
             status: "pre",
-            icon: "icone-1",
+            icon: "amazon",
             name:"Ricky Hunt",
             info: "PHP, SQLite, Artisan CLI"
         },
         {
             status: "pre",
-            icon: "icone-2",
+            icon: "tesla",
             name:"Anne Clarc",
             info: "PHP, SQLite, Artisan CLI"
         },
         {
             status: "nre",
-            icon: "icone-3",
+            icon: "sony",
             name:"Kristaps Zumman",
             info: "PHP, SQLite, Artisan CLI"
         },
         {
             status: "pre",
-            icon: "icone-4",
+            icon: "wallmart",
             name:"Ricky Hunt",
             info: "PHP, SQLite, Artisan CLI"
         },
         {
             status: "re",   
-            icon: "icone-5",
+            icon: "peugeot",
             name:"Carles Puyol",
             info: "PHP, SQLite, Artisan CLI"
         },
         {
             status: "pre",
-            icon: "icone-1",
+            icon: "shell",
             name:"Ricky Hunt",
             info: "PHP, SQLite, Artisan CLI"
         },
         {
             status: "re",
-            icon: "icone-2",
+            icon: "sony",
             name:"Anne Clarc",
             info: "PHP, SQLite, Artisan CLI"
         },
         {
             status: "en",
-            icon: "icone-3",
+            icon: "amazon",
             name:"Kristaps Zumman",
             info: "PHP, SQLite, Artisan CLI"
         },
         {
             status: "en",
-            icon: "icone-4",
+            icon: "peugeot",
             name:"Ricky Hunt",
             info: "PHP, SQLite, Artisan CLI"
         },
         {
             status: "pre",
-            icon: "icone-5",
+            icon: "tesla",
             name:"Carles Puyol",
             info: "PHP, SQLite, Artisan CLI"
         }
