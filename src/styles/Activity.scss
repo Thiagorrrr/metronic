@@ -39,7 +39,8 @@
 
     &__data {
         font-family: "Poppins", sans-serif;
-        font-size: rem(14);
+        font-size: rem(12);
+        margin-top: 5px;
         font-weight: 600;
         margin-right: 10px;
     }
@@ -80,7 +81,7 @@
         &::before {
             content: "";
             position: absolute;
-            left: 53px;
+            left: 66px;
             width: 3px;
             height: calc(100% + 32px);
             top: 0;

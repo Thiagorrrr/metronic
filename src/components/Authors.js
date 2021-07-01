@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-const Authors = ({ dados }) => {
+const Authors = ({ dados, title }) => {
 
     const [select, setSelect] = useState("all");
 
@@ -11,7 +11,7 @@ const Authors = ({ dados }) => {
         <div className="authors">
             <div className="authors__container">
                 <div className="authors__box">
-                    <span className="authors__title">Empreendimentos</span>
+                    <span className="authors__title">{title}</span>
                     <select className="authors__select" onChange={e => setSelectValue(e.target.value)}>
                         <option className="authors__option " value="all">filtrar</option>
                         <option className="authors__option" value="pre">Pré-incubados</option>

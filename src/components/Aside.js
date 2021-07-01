@@ -11,10 +11,6 @@ const Aside = ({activeMenu}) => {
     <aside className={`aside ${activeMenu ? 'aside--active': ''}  ${close ? `aside--close` : ''}`}>
       <div className="aside__container">
         <div className="aside__brand d-none d-lg-flex">
-          {
-            close ?
-              null : <h1 className="aside__title"> metronic</h1>
-          }
           <span className="aside__arrow" onClick={() => setClose(close ? false : true)}>
             <Arrow />
           </span>

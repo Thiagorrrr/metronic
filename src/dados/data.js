@@ -384,13 +384,75 @@ let dados = {
             info: "PHP, SQLite, Artisan CLI"
         }
     ],
+    authors2: [
+        {
+            status: "pre",
+            icon: "icone-1",
+            name:"Ricky Hunt",
+            info: "PHP, SQLite, Artisan CLI"
+        },
+        {
+            status: "pre",
+            icon: "icone-2",
+            name:"Anne Clarc",
+            info: "PHP, SQLite, Artisan CLI"
+        },
+        {
+            status: "nre",
+            icon: "icone-3",
+            name:"Kristaps Zumman",
+            info: "PHP, SQLite, Artisan CLI"
+        },
+        {
+            status: "pre",
+            icon: "icone-4",
+            name:"Ricky Hunt",
+            info: "PHP, SQLite, Artisan CLI"
+        },
+        {
+            status: "re",   
+            icon: "icone-5",
+            name:"Carles Puyol",
+            info: "PHP, SQLite, Artisan CLI"
+        },
+        {
+            status: "pre",
+            icon: "icone-1",
+            name:"Ricky Hunt",
+            info: "PHP, SQLite, Artisan CLI"
+        },
+        {
+            status: "re",
+            icon: "icone-2",
+            name:"Anne Clarc",
+            info: "PHP, SQLite, Artisan CLI"
+        },
+        {
+            status: "en",
+            icon: "icone-3",
+            name:"Kristaps Zumman",
+            info: "PHP, SQLite, Artisan CLI"
+        },
+        {
+            status: "en",
+            icon: "icone-4",
+            name:"Ricky Hunt",
+            info: "PHP, SQLite, Artisan CLI"
+        },
+        {
+            status: "pre",
+            icon: "icone-5",
+            name:"Carles Puyol",
+            info: "PHP, SQLite, Artisan CLI"
+        }
+    ],
     activity: [
         {
             icon:"",
             description: "Outlines keep you honest. And keep structure",
             info:"",
             link:"",
-            data: "03/21",
+            data: "03/01/21",
             status: "danger"
         },
         {
@@ -398,7 +460,7 @@ let dados = {
             description: "",
             info:"AEOL meeting",
             link:"",
-            data: "04/21",
+            data: "04/01/21",
             status: "sucess"
         },
         {
@@ -407,7 +469,7 @@ let dados = {
             info:"Make deposit",
             link:"#",
             nameLink:"USD 700",
-            data: "05/21",
+            data: "05/01/21",
             status: "stale"
         },
         {
@@ -416,7 +478,7 @@ let dados = {
             info:"",
             link:"#",
             nameLink:"#XF-2356",
-            data: "05/21",
+            data: "05/01/21",
             status: "stale"
         },
         {
@@ -424,7 +486,7 @@ let dados = {
             description: "Outlines keep you honest. And keep structure",
             info:"",
             link:"",
-            data: "03/21",
+            data: "03/01/21",
             status: "danger"
         },
         {
@@ -432,7 +494,7 @@ let dados = {
             description: "",
             info:"AEOL meeting",
             link:"",
-            data: "04/21",
+            data: "04/01/21",
             status: "sucess"
         },
         {
@@ -441,7 +503,7 @@ let dados = {
             info:"Make deposit",
             link:"#",
             nameLink:"USD 700",
-            data: "05/21",
+            data: "05/01/21",
             status: "stale"
         },
         {
@@ -450,7 +512,7 @@ let dados = {
             info:"",
             link:"#",
             nameLink:"#XF-2356",
-            data: "05/21",
+            data: "05/01/21",
             status: "stale"
         }
     ],

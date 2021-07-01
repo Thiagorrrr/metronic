@@ -28,10 +28,12 @@ const Section = () => {
             </div>
             <div className="section__wrapper">
                 <Authors
+                    title="Empreendimentos"
                     dados={dados.authors1}
                 />
                 <Authors
-                    dados={dados.authors1}
+                    title="Empreendedores"
+                    dados={dados.authors2}
                 />
                 <Activity
                     dados={dados.activity}

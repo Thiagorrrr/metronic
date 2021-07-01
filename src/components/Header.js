@@ -7,7 +7,7 @@ const Header = () => {
         <header className="header">
             <div className="header__mobile d-lg-none">
                 <div className="header__mobile-fixed">
-                    <h1 className="header__brand-name"> metronic </h1>
+                    <h1 className="header__brand-name"> Acme </h1>
                     <div className="header__box-config  d-lg-none">
                         <a className="header__config" href="#s">
                             <i className="header__icon fas fa-cog"> </i>
