@@ -4,13 +4,13 @@
     margin-top: 10px;
     @include breakpoint-lg {
         width: 218px;
+        margin-right: 10px;
+        &:last-child {
+            margin-right: 0;
+        }
     }
     @include breakpoint-xl {
         width: 170px;
-        margin-left: 15px;
-        &:first-child {
-            margin-left: 0;
-        }
     }
 
     &:last-child {

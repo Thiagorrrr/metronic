@@ -1,47 +1,55 @@
-.aside {
-    position: fixed;
-    width: 100%;
-    max-width: 265px;
-    top: 55px;
-    background-color: $colorAside;
-    transform: translateX(-100%);
-    transition: transform ease-in-out .2s;
-    z-index: 2;
-    @include breakpoint-lg { 
+.aside {   
+    @include breakpoint-lg {
+        display: block;
         width: 23%;
-        top: auto
+        max-width: 265px;
+    }
+    &__fixed {
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        max-width: 265px;
+        top: 55px;
+        background-color: $colorAside;
+        transform: translateX(-100%);
+        transition: transform ease-in-out 0.2s;
+        z-index: 2;
+
+        @include breakpoint-lg {
+            width: 23%;
+            top: 136px;
+            transform: translateX(0);
+        }
+
+        &--active {
+            transform: translateX(0);
+            transition: transform ease-in-out 0.2s;
+        }
+
+        &--close {
+            width: 75px;
+            .aside__arrow {
+                right: 25px;
+                svg {
+                    transform: rotateY(180deg);
+                }
+                g path {
+                    fill: $colorIconSelect;
+                }
+            }
+        }
     }
 
-    &--active {
-        transform: translateX(0);
-        transition: transform ease-in-out .2s;
-    }
-    @include breakpoint-lg {
-        position: relative;
-        transform: translateX(0);
-    }
     &__container {
         width: 100%;
     }
     &__title {
         font-size: 18px;
-        font-family: 'Poppins', sans-serif;
+        font-family: "Poppins", sans-serif;
         text-transform: uppercase;
         font-weight: bold;
         color: $white;
         margin: 0;
-    }
-    &--close {
-        width: 75px;
-        .aside__arrow {
-            right: 25px;
-            svg {
-                transform: rotateY(180deg);
-            }
-            g path {
-                fill: $colorIconSelect;
-            }
-        }
     }
     &__arrow {
         position: absolute;
@@ -68,26 +76,26 @@
         position: relative;
         overflow-y: scroll;
         overflow-x: hidden;
-        height: 100vh;
+        height: calc(100vh - 140px);
         padding: 30px 0 70px;
         margin: 0;
-        list-style: none;       
+        list-style: none;
     }
-        /* Works on Firefox */
+    /* Works on Firefox */
     * {
         scrollbar-width: thin;
         scrollbar-color: $colorScroll transparent;
     }
-        
+
     /* Works on Chrome, Edge, and Safari */
     *::-webkit-scrollbar {
         width: 6px;
     }
-    
+
     *::-webkit-scrollbar-track {
         background: transparent;
     }
-    
+
     *::-webkit-scrollbar-thumb {
         background-color: $colorScroll;
         border-radius: 20px;

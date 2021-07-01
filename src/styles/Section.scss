@@ -3,7 +3,6 @@
     height: 100%;
     background-color: #e6e8f0;
     padding: 35px 0;
-    overflow-y: scroll;
     @include breakpoint-lg {
         padding: 70px 60px  0;
     }
@@ -21,13 +20,30 @@
             flex-direction: row;
         }
 
+        @include breakpoint-xl {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
         &--card {
             flex-wrap: wrap;
             flex-direction: row;
             padding: 0 10px;
+            max-width: 320px;
+            margin: 0 auto;
 
-            @include breakpoint-xl { 
+            @include breakpoint-md { 
+                padding: 0 20px;
+                max-width: initial;
+                margin: initial;
+            }
+            @include breakpoint-lg { 
+                padding: 0;
                 justify-content: initial;
+            }
+            @include breakpoint-xl { 
+                max-width: 1200px;
+                margin: 0 auto;
             }
         }
 
