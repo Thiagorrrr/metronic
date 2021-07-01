@@ -5,6 +5,10 @@
     width: 90%;
     overflow: hidden;
 
+    @include breakpoint-lg {
+        width: 65%;
+    }
+
     @include breakpoint-xl {
         width: 45%;
         margin-top: 60px;
@@ -70,6 +74,9 @@
 
         @include breakpoint-lg {  
             height: 220px;
+        }
+        @include breakpoint-xl {  
+            height: 250px;
         }
     }
 

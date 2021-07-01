@@ -5,6 +5,10 @@
     width: 90%;
     overflow: hidden;
 
+    @include breakpoint-lg {
+        width: 65%;
+    }
+
     @include breakpoint-xl {
         margin-top: 60px;
         width: 45%;
@@ -75,6 +79,10 @@
         @include breakpoint-lg {  
             height: 210px;
         }
+
+        @include breakpoint-xl {  
+            height: 240px;
+        }
     }
     &__card {
         width: 47%;
@@ -110,6 +118,13 @@
         line-height: 1;
         @include breakpoint-lg { 
             font-size: rem(26);
+        }
+    }
+
+    &__price {
+        @include breakpoint-xl{
+            margin: 18px 0;
+            font-size: rem(30);
         }
     }
     &__number {

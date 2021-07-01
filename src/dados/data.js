@@ -529,17 +529,17 @@ let dados = {
                 {
                     color: "green",
                     price: "R$ 1231,00 ",
-                    description: "total de impostos"
+                    description: "Invest. externos"
                 },
                 {
                     color: "yellow",
                     number: "34",
-                    description: "total de impostos"
+                    description: "postos de trabalho"
                 },
                 {
                     color: "blue",
                     number: "34",
-                    description: "total de impostos"
+                    description: "marcas e patentes"
                 }
             ]
         },
