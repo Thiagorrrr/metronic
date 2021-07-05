@@ -5,6 +5,9 @@
         max-width: 265px;
         background-color: #e6e8f0;
     }
+    &--close {
+        width: 75px;
+    }
 
     &__fixed {
         position: fixed;
