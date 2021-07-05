@@ -59,7 +59,7 @@ const CollumnChart = () => {
             <div className="basic__wrapper">
                 <div className="basic__box">
                     <div className="basic__box-text">
-                        <h2 className="basic__title">Faturamento dos<br></br> Empreendimentos</h2>
+                        <h2 className="basic__title">Indicadores<br></br> Consolidados</h2>
                         <select className="basic__select" onChange={e => setSelectValue(e.target.value)}>
                             {
                                 dados?.collumnChart.map((item, index) => <option key={index} className="basic__option " value={item.ano}>{item.ano}</option>)
