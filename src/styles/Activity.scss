@@ -65,13 +65,15 @@
         color: #3f4254;
     }
     &__list {
+        display: block;
         max-height: 370px;
-        overflow-y: auto;
+        overflow-y: scroll;
+        -webkit-overflow-scrolling: touch;
         padding: 0;
         list-style: none;
         margin-top: 20px;
 
-        @include breakpoint-lg { 
+        @include breakpoint-lg {
             max-height: 450px;
         }
     }
@@ -117,10 +119,9 @@
         &--stale {
             color: #ffa800;
         }
-        
+
         &::before {
             background-color: $white;
         }
-
     }
 }
