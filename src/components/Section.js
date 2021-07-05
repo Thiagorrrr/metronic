@@ -2,8 +2,8 @@ import dados from "../dados/data";
 import Card from "../components/Card"
 import Authors from "./Authors";
 import Activity from "./Activity";
-import Graphic from "./Graphic";
-import Ind from "./Ind";
+import ChartLine from "./ChartLine"
+import CollumnChart from "./CollumnChart"
 import Footer from "./Footer";
 const Section = () => {
     return (
@@ -40,8 +40,8 @@ const Section = () => {
                 />
             </div>
             <div className="section__wrapper section__wrapper--collumn">
-                <Graphic />
-                <Ind/>
+                <ChartLine/>
+                <CollumnChart/>
             </div>
 
             <Footer/>
