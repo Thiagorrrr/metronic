@@ -3,7 +3,7 @@
     background-color: $white;
     padding: 15px;
     box-shadow: 0 0 30px 0 rgba(82, 63, 105, 0.05);
-    max-height: 480px;
+    max-height: 545px;
     overflow: hidden;
     border-radius: 5px;
     margin-bottom: 30px;
@@ -13,6 +13,7 @@
     }
 
     @include breakpoint-lg {
+        max-height: 445px;
         width: 49.333%;
     }
 
@@ -23,7 +24,11 @@
 
     &__container {
         overflow: hidden;
-        max-height: 440px;
+        max-height: 545px;
+
+        @include breakpoint-lg { 
+            max-height: 440px;
+        }
     }
     &__title {
         font-family: "Poppins", sans-serif;
