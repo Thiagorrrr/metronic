@@ -48,11 +48,11 @@
     }
     &__list {
         max-height: 450px;
-        overflow-y: auto;
-        -webkit-overflow-scrolling: touch;
+        overflow-y: scroll;
         padding: 0;
         list-style: none;
         margin-top: 20px;
+        -webkit-overflow-scrolling: auto;
     }
     &__item {
         display: flex;
