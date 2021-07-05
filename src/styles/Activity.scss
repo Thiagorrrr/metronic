@@ -23,7 +23,6 @@
     }
 
     &__container {
-        overflow: hidden;
         max-height: 545px;
 
         @include breakpoint-lg { 
