@@ -17,21 +17,25 @@
         margin-bottom: 0;
     }
     &__wrapper {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
         height: 100%;
         padding: 10px;
     }
     &__image {
         height: 42px;
+        margin-bottom: 10px;
         @include breakpoint-xl {
             height: 32px;
         }
     }
     &__icon {
         padding-bottom: 10px;
-        font-size: 35px;
+        font-size: rem(35);
         color: $white;
         @include breakpoint-xl {
-            font-size: 30px;
+            font-size: rem(28)
         }
     }
     &__title {
@@ -85,7 +89,7 @@
             font-size: rem(80);
         }
         @include breakpoint-xl {
-            font-size: rem(60);
+            font-size: rem(65);
         }
     }
 }
