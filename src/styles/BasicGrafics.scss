@@ -19,14 +19,13 @@
     }
 
     &__title {
-        margin: 0;
         font-family: "Poppins", sans-serif;
-        font-weight: 400;
-        font-size: rem(18);
-        margin-right: 10px;
+        color: #181c32;
+        font-weight: 600;
+        font-size: rem(16);
 
-        @include breakpoint-lg {
-            font-size: rem(30);
+        @include breakpoint-md {
+            font-size: rem(18);
         }
     }
     &__box {
@@ -42,15 +41,32 @@
     }
 
     &__select {
-        font-family: "Poppins", sans-serif;
-        font-weight: 400;
-        width: 100px;
-        padding: 8px;
-        display: flex;
-        border-radius: 10px;
-        outline: transparent;
+        cursor: pointer;
+        padding: 5px;
         height: 40px;
-        font-size: rem(14);
-        line-height: 1;
+        outline: transparent;
+        font-family: "Poppins", sans-serif;
+        font-weight: 500;
+        border-radius: 0.42rem;
+        font-size: rem(13);
+        text-transform: capitalize;
+        color: $colorIconSelect;
+        background-color: #e1f0ff;
+        border-color: transparent;
+        &:hover {
+            color: $white;
+            background-color: $colorIconSelect;
+            border-color: transparent;
+        }
+    }
+    &__option  {
+        border-radius: 0.42rem;
+        font-family: "Poppins", sans-serif;
+        font-weight: 500;
+        text-transform: capitalize;
+        color: $colorIconSelect;
+        background-color: $white;
+        padding: 5px;
+        cursor: pointer;
     }
 }
