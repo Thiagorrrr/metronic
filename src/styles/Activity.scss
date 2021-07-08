@@ -71,19 +71,9 @@
         list-style: none;
         margin-top: 20px;
 
-        &::-webkit-scrollbar {
-            -webkit-appearance: none;
-            width: 4px;
-        }
-        &::-webkit-scrollbar-thumb {
-            border-radius: 2px;
-            background-color: rgba(0, 0, 0, 0.322);
-            -webkit-box-shadow: 0 0 1px rgba(255,255,255,.5);
-        }
-
-        @include breakpoint-lg {
-            max-height: 450px;
-        }
+        // @include breakpoint-lg {
+        //     max-height: 450px;
+        // }
     }
     &__item {
         position: relative;
@@ -131,5 +121,25 @@
         &::before {
             background-color: $white;
         }
+    }
+
+     /* Works on Firefox */
+     * {
+        scrollbar-width: thin;
+        scrollbar-color: rgba(0, 0, 0, 0.322) transparent;
+    }
+
+    /* Works on Chrome, Edge, and Safari */
+    *::-webkit-scrollbar {
+        width: 4px;
+    }
+
+    *::-webkit-scrollbar-track {
+        background: transparent;
+    }
+
+    *::-webkit-scrollbar-thumb {
+        background-color: rgba(0, 0, 0, 0.322);
+        border-radius: 20px;
     }
 }
