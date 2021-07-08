@@ -92,7 +92,7 @@
 
         @include breakpoint-lg {
             position: fixed;
-            z-index: 3;
+            z-index: 20;
         }
     }
     &__box-info {
