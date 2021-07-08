@@ -70,6 +70,7 @@
         padding: 0;
         list-style: none;
         margin-top: 20px;
+        -webkit-overflow-scrolling: auto;
 
         @include breakpoint-lg {
             max-height: 380px;
@@ -132,6 +133,7 @@
     /* Works on Chrome, Edge, and Safari */
     *::-webkit-scrollbar {
         width: 4px;
+        -webkit-appearance: none;
     }
 
     *::-webkit-scrollbar-track {
