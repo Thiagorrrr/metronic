@@ -51,6 +51,7 @@
         padding: 0;
         list-style: none;
         margin-top: 20px;
+        -webkit-transform: translate3d(0,0,0);
         &::-webkit-scrollbar {
             -webkit-appearance: none;
             width: 4px;
