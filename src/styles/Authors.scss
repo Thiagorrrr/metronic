@@ -21,7 +21,6 @@
     }
 
     &__container {
-        overflow-y: scroll;
         max-height: 440px;
     }
 
@@ -47,6 +46,8 @@
     }
     &__list {
         max-height: 370px;
+        overflow-y: scroll;
+        overflow-x: hidden;
         padding: 0;
         list-style: none;
         margin-top: 20px;
