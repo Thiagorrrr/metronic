@@ -47,8 +47,10 @@
         color: #B5B5C3;
     }
     &__list {
+        display: inline-block;
         max-height: 370px;
         height: 100%;
+        width: 100%;
         overflow-y: scroll;
         overflow-x: hidden;
         padding: 0;
