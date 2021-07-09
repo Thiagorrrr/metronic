@@ -6,7 +6,6 @@
     max-height: 480px;
     border-radius: 5px;
     margin-bottom: 30px;
-    -webkit-overflow-scrolling: touch;
 
     &:last-child {
         margin-bottom: 0;
@@ -68,6 +67,7 @@
         max-height: 370px;
         height: 100%;
         overflow-y: scroll;
+        -webkit-overflow-scrolling: touch;
         overflow-x: hidden;
         padding: 0;
         list-style: none;
