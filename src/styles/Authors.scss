@@ -42,10 +42,6 @@
     &__title {
         font-weight: 600;
         font-size: rem(16);
-
-        @include breakpoint-md {
-            font-size: rem(18);
-        }
     }
     &__info {
         font-size: rem(13);
@@ -96,6 +92,7 @@
         outline: transparent;
         font-family: "Poppins", sans-serif;
         font-weight: 500;
+        max-width: 120px;
         border-radius: 0.42rem;
         font-size: rem(13);
         text-transform: capitalize;
